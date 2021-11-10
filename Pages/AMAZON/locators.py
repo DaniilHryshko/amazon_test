@@ -6,7 +6,7 @@ class BasePageLocators:
     OrderList = (By.CSS_SELECTOR, 'a[id="nav-orders"]')
     SignIn = (By.CSS_SELECTOR, 'a[id="nav-link-accountList"]')
 
-    # Go department
+    # Go to department
     AllContentButton = (By.CSS_SELECTOR, 'i.hm-icon.nav-sprite')
     ElectronicDepartment = (By.CSS_SELECTOR, 'a.hmenu-item[data-menu-id="5"]')
     Accessories = (By.XPATH, '//a[contains(text(), "Accessories & Supplies")]')
@@ -29,4 +29,11 @@ class SignInLocators:
 class ProductPageLocators:
     AddToCart = (By.CSS_SELECTOR, 'input[id="add-to-cart-button"]')
 
+
+class PaginationProductsPageLocators:
+    NamesOfProducts = (By.CSS_SELECTOR, 'span.a-size-base.a-color-base.a-text-normal')
+    # крч, не понимаю что тут не так. Запустил тест с этим локатором в коммандной строке, сайт отдаёт значения 50/50 не меняя локатора
+    NamesOfProductsV2 = (By.CSS_SELECTOR, 'a.a-link-normal.a-text-normal')
+    NextPage = (By.CSS_SELECTOR, 'li.a-last')
+    FirstProdcutLink = (By.CSS_SELECTOR, 'img[data-image-latency="s-product-image"]')
 
