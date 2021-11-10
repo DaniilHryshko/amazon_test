@@ -1,0 +1,6 @@
+anticaptchaofficial==1.0.31
+environs==9.3.2
+fake-useragent==0.1.11
+undetected-chromedriver==3.0.3
+selenium~=4.0.0b4
+pytest~=6.2.5
